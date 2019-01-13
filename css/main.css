@@ -1,0 +1,156 @@
+.app {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at center, #2c9bd4, #362d58);
+}
+.app .preloader {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.app .preloader svg {
+  display: flex;
+  height: 60%;
+  width: 60%;
+}
+.app .menuPage {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.app .menuPage .headTitle {
+  position: absolute;
+  top: 5%;
+  font-size: 10vh;
+}
+.app .menuPage .menu {
+  display: flex;
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  border: 1px solid #362d58;
+  box-shadow: 0 0 20px 8px #000000;
+}
+.app .menuPage .menu .message {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+}
+.app .menuPage .menu span {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  text-align: center;
+  font-size: 35px;
+}
+.app .menuPage .menu .startGameButton {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  height: 18%;
+  bottom: 6%;
+  left: 40%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.app .menuPage .menu .startGameButton:hover {
+  box-shadow: 0 0 3px 1px #000000 inset;
+}
+.app .menuPage .menu .startGameButton:active {
+  box-shadow: 0 0 8px 1px #000000 inset;
+}
+.app .menuPage .menu input {
+  position: absolute;
+  width: 80%;
+  top: 65%;
+  left: 8%;
+  cursor: pointer;
+}
+.app .gamePage {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.app .gamePage .field {
+  position: absolute;
+  display: flex;
+  width: 80vmin;
+  height: 80vmin;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  outline: 2px solid #93cae1;
+  background: #00000055;
+}
+.app .gamePage .field .cell {
+  display: flex;
+  outline: 1px solid #93cae1;
+  cursor: pointer;
+}
+.app .endOfGamePage {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.app .endOfGamePage .note {
+  display: flex;
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  background: #00000055;
+  border: 1px solid #362d58;
+  box-shadow: 0 0 20px 8px #000000;
+  color: #c3cfef;
+  text-align: center;
+  font-weight: bold;
+}
+.app .endOfGamePage .note .message {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  font-size: 8vh;
+}
+.app .endOfGamePage .note .startNewGameButton {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  height: 20%;
+  bottom: 6%;
+  left: 40%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.app .endOfGamePage .note .startNewGameButton:hover {
+  box-shadow: 0 0 3px 1px #000000 inset;
+}
+.app .endOfGamePage .note .startNewGameButton:active {
+  box-shadow: 0 0 8px 1px #000000 inset;
+}
+.app .author {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
