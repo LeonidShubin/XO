@@ -29,13 +29,13 @@
 .app .menuPage .headTitle {
   position: absolute;
   top: 5%;
-  font-size: 10vh;
+  font-size: 10vmin;
 }
 .app .menuPage .menu {
   display: flex;
   position: absolute;
-  height: 200px;
-  width: 400px;
+  height: 40%;
+  width: 40%;
   border: 1px solid #362d58;
   box-shadow: 0 0 20px 8px #000000;
 }
@@ -85,6 +85,24 @@
   justify-content: center;
   align-items: center;
 }
+.app .gamePage .startNewGameButton {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  height: 8%;
+  top: 1%;
+  left: 40%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.app .gamePage .startNewGameButton:hover {
+  box-shadow: 0 0 3px 1px #000000 inset;
+}
+.app .gamePage .startNewGameButton:active {
+  box-shadow: 0 0 8px 1px #000000 inset;
+}
 .app .gamePage .field {
   position: absolute;
   display: flex;
@@ -115,7 +133,7 @@
   position: absolute;
   height: 200px;
   width: 400px;
-  background: #00000055;
+  background: #00000085;
   border: 1px solid #362d58;
   box-shadow: 0 0 20px 8px #000000;
   color: #c3cfef;
@@ -153,4 +171,5 @@
   text-decoration: none;
   color: #000;
   outline: none;
+  z-index: 3;
 }
